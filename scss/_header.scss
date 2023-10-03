@@ -1,0 +1,31 @@
+.header{
+  background-color: #0073ce;
+  height: 8.8rem;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .container{
+    @include flex(row, center, space-between)
+  }
+  .nav{
+    @include flex(row, center, flex-start);
+    gap: 5.9rem;
+    ul{
+      @include flex(row, center, flex-start);
+      gap: 4.8rem;
+      a{
+        color: $grey-100;
+        font-family: $poppins;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 125%;
+        transition: all .3s ease;
+        &:hover{
+          color: $brand-yellow;
+        }
+      }
+    }
+  }
+}
