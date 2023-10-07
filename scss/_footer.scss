@@ -1,0 +1,108 @@
+.rodape{
+  background-color: $brand-blue;
+  padding-top: 4.9rem;
+  .topo-rodape{
+    @include flex(row, center, space-between);
+    border-bottom: 2px solid rgba(73,197,253,.2);
+    padding-bottom: 4.8rem;
+    margin-bottom: 5.7rem;
+    .sociais{
+      @include flex(row, center, flex-start);
+      gap: 3rem;
+      strong{
+        color: $white;
+        font-size: 1.4rem;
+        opacity: 0.7;
+        font-weight: 400;
+      }
+      ul{
+        @include flex(row, center, flex-start);
+        gap: 3rem;
+      }
+    }
+  }
+  .nav-interna{
+    @include flex(row, flex-start, space-between);
+    border-bottom: 2px solid rgba(73,197,253,.2);
+    padding-bottom: 6.2rem;
+    margin-bottom: 3.9rem;
+    nav{
+      width: 100%;
+      max-width: 86rem;
+      @include flex(row, flex-start, space-between);
+      .item{
+        strong{
+          font-family: $poppins;
+          color: $white;
+          margin-bottom: 2.5rem;
+          display: inline-block;
+          font-size: 1.6rem;
+        }
+        ul{
+          @include flex(column, flex-start, flex-start);
+          gap: 2.9rem;
+          li{
+            a{
+              color: $white;
+              font-size: 1.4rem;
+              opacity: 0.7;
+              transition: .3s all;
+              &:hover{
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .buttons{
+      width: 100%;
+      max-width: 28rem;
+      @include flex(column, flex-start, flex-start);
+      gap: 2.4rem;
+      button{
+        @include flex(row, center, flex-start);
+        gap: 2.4rem;
+        height: 7.6rem;
+        background-color: rgba(0, 165, 240, 0.23);
+        border-radius: 6px;
+        width: 100%;
+        padding-left: 2.5rem;
+        transition: all .3s ease;
+        &:hover{
+          transform: scale(1.1);
+        }
+        .text{
+         text-align: left;
+         strong{
+          display: block;
+          font-size: 1.4rem;
+          color: $white;
+         }
+         span{
+          font-size: 1.4rem;
+          color: $white;
+          line-height: 150%;
+         }
+        }
+      }
+    }
+  }
+  .mensagem{
+    @include flex(row, flex-start, flex-start);
+    gap: 2.5rem;
+    padding-bottom: 3.8rem;
+    border-bottom: 4px solid $brand-yellow;
+    .emoji{
+      font-size: 1.8rem;
+    }
+    p{
+      font-size: 1.4rem;
+      color: $white;
+      line-height: 150%;
+      width: 100%;
+      max-width: 66rem;
+      opacity: 0.8;
+    }
+  }
+}
