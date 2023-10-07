@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  background-color: $brand-blue;
   .container{
     @include flex(row, center, space-between)
   }
@@ -24,6 +25,39 @@
         &:hover{
           color: $brand-yellow;
         }
+      }
+    }
+    .btn-mobile{
+      display: none;
+      margin-left: 4rem;
+    }
+  }
+  @include responsive(1080px){
+    .nav{
+      gap: 4.1rem;
+      ul{
+        gap: 3rem;
+      }
+    }
+  }
+  @include responsive(991px){
+    .logo{
+      max-width: 10.8rem;
+    }
+    .nav{
+      ul{
+        display: none;
+      }
+      .btn-mobile{
+        display: block;
+      }
+    }
+  }
+  @include responsive(480px){
+    height: 7.3rem;
+    .nav{
+      .btn-secondary{
+        display: none;
       }
     }
   }
