@@ -5,7 +5,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $brand-blue;
   .container{
     @include flex(row, center, space-between)
   }
