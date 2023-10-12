@@ -372,6 +372,7 @@
       height: 41rem;
       background: url('../img/bg-box-card-neon.svg') no-repeat center center;
       padding-left: 5.9rem;
+      border-radius: 10px;
       .text-card{
         width: 100%;
         max-width: 32.7rem;
@@ -400,6 +401,194 @@
       }
       .img-card{
         margin-right: -3rem;
+      }
+    }
+  }
+  @include responsive(1200px){
+    .left-area{
+      .ilustracao-mockup{
+        .circle{
+          display: none;
+        }
+      }
+    }
+    .right-area{
+      max-width: 73rem;
+      .text-right {
+        .content-text-right{
+          ul{
+            li{
+              .info{
+                gap: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+      .card-pj{
+        padding-left: 3.5rem;
+        .img-card{
+          margin-right: -1rem;
+        }
+      }
+    }
+  }
+  @include responsive(991px){
+    .container{
+      flex-direction: column-reverse;
+    }
+    .right-area{
+      max-width: 100%;
+      margin-bottom: 9.3rem;
+      .text-right{
+        margin-bottom: 5.7rem;
+        .content-text-right{
+          h2{
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 5.3rem;
+            font-size: 3.6rem;
+          }
+          .btn{
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+      .card-pj{
+        background-size: cover;
+        max-width: 94.7%;
+        .img-card{
+          margin-right: -2.5rem;
+        }
+      }
+    }
+    .left-area{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 61.1rem;
+      margin: 0 auto;
+      .ilustracao-mockup{
+        margin-bottom: 0;
+        .mockup{
+          max-width: 25.5rem;
+        }
+      }
+      .text-left{
+        max-width: 27rem;
+      }
+    }
+  }
+  @include responsive(600px){
+    padding-top: 16.9rem;
+    .left-area{
+      margin-top: 10rem;
+      .text-left{
+        .icon{
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+    .right-area{
+      .card-pj{
+        max-width: 100%;
+        height: 47rem;
+        flex-direction: column;
+        padding-top: 4.3rem;
+        padding-left: 0;
+        .text-card{
+          @include flex(column, center, flex-start);
+          margin-bottom: 3rem;
+          h3,p{
+            text-align: center;
+          }
+        }
+        .img-card{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  @include responsive(480px){
+    padding-top: 8.6rem;
+    position: relative;
+    overflow: hidden;
+    &::after{
+      content: '';
+      width: 100%;
+      height: 21.4rem;
+      background: linear-gradient(180deg, #F7F7FA 0%, rgba(247, 247, 250, 0.00) 100%);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transform: matrix(1,0,0,-1,0,0);
+    }
+    .left-area{
+      flex-direction: column-reverse;
+      gap: 4rem;
+      margin-top: 5.2rem;
+      .ilustracao-mockup{
+        height: 39.7rem;
+      }
+    }
+    .right-area{
+      margin-bottom: 6.7rem;
+      .text-right{
+        .content-text-right{
+          h2{
+            font-size: 2.8rem;
+            margin-bottom: 3.8rem;
+          }
+          ul{
+            li{
+              padding: 2.8rem 0;
+              .info{
+                align-items: flex-start;
+                gap: 2.3rem;
+                .text-info{
+                  h3{
+                    margin-bottom: 0.7rem;
+                    font-size: 2rem;
+                  }
+                  p{
+                    font-size: 1.4rem;
+                    max-width: 22.7rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .card-pj{
+        .text-card{
+          h2{
+            font-weight: 600;
+            font-size: 2.8rem;
+            margin-bottom: 1.4rem;
+          }
+          h3{
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+          }
+          p{
+            max-width: 25.3rem;
+          }
+          .buttons{
+            a{
+             padding-left: 3rem;
+             padding-right: 3rem;
+            }
+          }
+        }
+        .img-card{
+          max-width: 27.7rem;
+        }
       }
     }
   }

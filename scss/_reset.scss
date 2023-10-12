@@ -8,9 +8,10 @@
   font-family: $inter;
 }
 
-body,html{
-  overflow: hidden;
+body, html{
+  overflow-x: hidden;
 }
+
 
 button{
   cursor: pointer;
