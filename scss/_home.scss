@@ -625,6 +625,37 @@
   .depoimentos-slide{
     overflow: hidden;
   }
+  @include responsive(991px){
+    padding-top: 10.9rem;
+    .text-depoimentos{
+      flex-direction: column;
+      align-items: center;
+      gap: 5.1rem;
+      margin-bottom: 5.1rem;
+      h2{
+        text-align: center;
+        font-weight: 600;
+        font-size: 3.6rem;
+      }
+    }
+  }
+  @include responsive(480px){
+    padding-top: 7.6rem;
+    .container{
+      padding: 0;
+    }
+    .text-depoimentos{
+      margin-bottom: 3.4rem;
+      gap: 3.4rem;
+      h2{
+        font-size: 2.4rem;
+        max-width: 25.3rem;
+      }
+    }
+    .depoimentos-slide{
+      padding: 0 15px;
+    }
+  }
 }
 
 .banco-digital{
