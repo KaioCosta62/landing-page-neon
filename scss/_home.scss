@@ -726,4 +726,109 @@
       }
     }
   }
+  @include responsive(1200px){
+    .container{
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+    }
+    .content-banco-digital{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 75%;
+      h2{
+        text-align: center;
+        max-width: 80%;
+      }
+    }
+    .mockup-images{
+      margin-right: 0;
+      left: 0;
+    }
+  }
+  @include responsive(900px){
+    padding-top: 8.6rem;
+    padding-bottom: 8.1rem;
+    .content-banco-digital{
+      max-width: 100%;
+      h2{
+       font-weight: 600;
+      }
+    }
+    .mockup-images{
+      max-width: 52.8rem;
+      height: 63rem;
+      img{
+        &.mockup-01,
+        &.mockup-02{
+          max-width: 25.5rem;
+          z-index: 2;
+        }
+        &.circle-bg-digital{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  @include responsive(480px){
+    padding-top: 5.7rem;
+    padding-bottom: 7.2rem;
+    .content-banco-digital{
+      margin-bottom: 4.6rem;
+      h2{
+        font-size: 2.6rem;
+        max-width: 100%;
+        margin-bottom: 3.9rem;
+        span{
+          font-size: 2.4rem;
+        }
+      }
+      .beneficios{
+        align-items: center;
+        margin-bottom: 4.4rem;
+        li{
+          flex-direction: column;
+          align-items: center;
+          max-width: 29rem;
+          h4,p{
+            text-align: center;
+          }
+          h4{
+            margin-bottom: 1rem;
+          }
+          p{
+            font-size: 1.4rem;
+            text-align: center;
+            max-width: 19.2rem;
+            margin: 0 auto;
+          }
+        }
+      }
+  }
+  .mockup-images{
+    max-width: 35.7rem;
+    height: 46.9rem;
+    img{
+      &.mockup-01,
+      &.mockup-02{
+        max-width: 16.8rem;
+      }
+      &.circle-bg-digital{
+        bottom: 0;
+        left: 0;
+      }
+      &.mockup-01{
+        left: 0;
+        top: 5.8rem;
+        bottom: initial;
+      }
+      &.mockup-02{
+        top: 0;
+        right: 0;
+        left: initial;
+      }
+    }
+  }
+}
 }
