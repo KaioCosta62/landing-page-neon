@@ -716,9 +716,11 @@
       position: absolute;
       &.mockup-01{
         bottom: 4.1rem;
+        z-index: 2;
       }
       &.mockup-02{
         left: 25.3rem;
+        z-index: 2;
       }
       &.circle-bg-digital{
         right: 0;
